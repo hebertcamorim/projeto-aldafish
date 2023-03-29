@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/clientes.css">   
     <title>Gerenciador ALDAFISH peixes congelados</title>
 </head>
 <body>
+
     <header class="menu">
         <a href="index.html">
             <img class="logo" src="src/img/logo.svg">
@@ -37,5 +39,21 @@
             </ul>
         </nav>
     </header>
+
+    <section class="container">
+        <div class="login">
+            <h1>Área do Cliente</h1>
+            <form class="formulario" action="">
+                <input class="email" type="email" name="email" placeholder="Email">
+                <span class="validate email-warning"></span>
+                <input class="password" type="password" name="password" placeholder="Password">
+                <span class="validate password-warning"></span>
+                <a href="recover-password.html">Esqueceu a senha?</a>
+                <button type="submit" onclick="validar()">Acessar</button>
+            </form>
+        </div>
+    </section>
+    <script type="text/javascript" src="src/js/script.js"></script>
+    <script type="text/javascript" src="src/js/validate.js"></script>
 </body>
 </html>
