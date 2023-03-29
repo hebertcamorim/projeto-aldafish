@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 749px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+.login {
+    margin-top: 100px;
+    width: 400px;
+    height: 480px;
+    background-color: white;
+    box-shadow: 0 0 28px #004464;
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.login h1 {
+    font-family: 'Secular One', sans-serif;
+    font-size: 30px;
+    color: #006494;
+    text-align: center;
+    margin: 80px 0 40px 0;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+}
+
+.formulario input {
+    width: 100%;
+    height: 38px;
+    margin: 10px 0;
+    padding-left: 20px;
+    border-left: 5px solid #0397db;
+    border-top: transparent;
+    border-right: transparent;
+    border-bottom: transparent;
+
+    background-color: #ececec;
+}
+
+.formulario input:focus {
+    background-color: white;
+    border-left: 5px solid #0397db;
+    border-top: 1px solid #0397db;
+    border-right: 1px solid #0397db;;
+    border-bottom: 1px solid #0397db;; 
+    outline: none;
+}
+
+.formulario input:focus::placeholder {
+    visibility: hidden;
+}
+
+.validate {
+    color: red;
+}
+
+.formulario a {
+    text-decoration: none;
+    font-family: 'Secular One', sans-serif;
+    font-size: 14px;
+    color: #0397db;
+    margin: 10px 0 40px 180px;
+}
+
+.formulario a:hover {
+    color: #0274a9;
+}
+
+.formulario button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: #0397db;
+    font-family: 'Secular One', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.formulario button:hover {
+    background-color: #0274a9;
+    box-shadow: 0 0 28px rgba(0, 68, 100, 0.2);
+    cursor: pointer;
+}
+
+.formulario button:active {
+    background-color: #028ecf;
+    transform: scale(0.98);
+}
